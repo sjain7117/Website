@@ -8,24 +8,29 @@
       name="description"
       content="The Cloud Network is a community of builders exploring the future of connected experiences."
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Dark Mode</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrapper header-inner">
-        <a class="brand" href="index.html">The Cloud Network</a>
-        <nav class="primary-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <!-- <li><a href="storyline.html">Storyline</a></li> -->
-            <li><a href="apply.html">Apply</a></li>
+    <div class="page">
+      <header class="hero" id="home">
+        <nav class="top-nav">
+          <span class="brand">My Portfolio</span>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -75,9 +80,22 @@
                 <p class="layer-text">Launch stories that inspire the community and attract new collaborators to the movement.</p>
               </article>
             </div>
+        <div class="hero-content" data-animate>
+          <p class="intro">Hello, I'm</p>
+          <h1 class="name">Your Name</h1>
+          <h2 class="role">Product Designer &amp; Front-End Developer</h2>
+          <p class="tagline">
+            I craft thoughtful digital experiences with a focus on clarity,
+            accessibility, and delight.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Let's Talk</a>
           </div>
         </div>
       </section>
+        <div class="hero-highlight" aria-hidden="true"></div>
+      </header>
 
       <section class="section" aria-labelledby="section-storyline">
         <div class="section-divider top" aria-hidden="true"></div>
@@ -93,97 +111,135 @@
               </p>
             </div>
             <a class="button secondary" href="storyline.html" data-animate style="display: none">Read the full story</a>
+      <main>
+        <section class="section about" id="about">
+          <div class="section-header" data-animate>
+            <h2>About</h2>
+            <p>Designing with empathy, building with precision.</p>
           </div>
+          <div class="about-body" data-animate>
+            <p>
+              With a multidisciplinary background spanning design systems,
+              responsive web development, and product strategy, I help teams
+              translate complex problems into intuitive interfaces. My approach is
+              collaborative, research-informed, and endlessly curious about how
+              people interact with technology.
+            </p>
+            <p>
+              Whether prototyping new ideas or refining production-ready flows, I
+              balance aesthetics with performance to deliver experiences that feel
+              effortless.
+            </p>
+          </div>
+        </section>
 
           <div class="storyline-grid">
             <article class="story-card" data-step="Chapter 01" data-animate>
               <h3>Spark the signal</h3>
               <p>Gather the club’s founding team, define the manifesto, and identify the experiments we’re obsessed with.</p>
+        <section class="section projects" id="projects">
+          <div class="section-header" data-animate>
+            <h2>Selected Work</h2>
+            <p>Highlighted case studies and experiments.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card" data-animate>
+              <span class="project-tag">UX Research</span>
+              <h3>Insightful Analytics Dashboard</h3>
+              <p>
+                Designed a modular analytics platform with personalized reporting
+                and real-time collaboration tools for enterprise teams.
+              </p>
+              <a href="#" class="project-link">View Case Study</a>
             </article>
             <article class="story-card" data-step="Chapter 02" data-animate>
               <h3>Activate the playground</h3>
               <p>Prototype fast, share often, and build rituals that accelerate learning across disciplines.</p>
+            <article class="project-card" data-animate>
+              <span class="project-tag">Product Design</span>
+              <h3>Wellness Mobile App</h3>
+              <p>
+                Created end-to-end flows and component libraries for a mindfulness
+                app focused on habit-building and positive reinforcement.
+              </p>
+              <a href="#" class="project-link">View Case Study</a>
             </article>
             <article class="story-card" data-step="Chapter 03" data-animate>
               <h3>Launch the broadcast</h3>
               <p>Open up the network to campus, publish our projects, and invite partners into the narrative.</p>
+            <article class="project-card" data-animate>
+              <span class="project-tag">Front-End</span>
+              <h3>Interactive Portfolio Microsite</h3>
+              <p>
+                Developed an immersive storytelling portfolio that showcases
+                immersive visuals, subtle animations, and accessibility best
+                practices.
+              </p>
+              <a href="#" class="project-link">View Case Study</a>
             </article>
           </div>
-        </div>
-        <div class="section-divider bottom" aria-hidden="true"></div>
-      </section>
+        </section>
 
-      <section class="section" aria-labelledby="section-ready">
-        <div class="wrapper">
-          <aside class="callout callout-centered" data-animate>
-            <h2 id="section-ready" class="section-title">Ready to plug into the network?</h2>
-            <p>
-              Applications open this semester. We review interest forms weekly and invite a select crew for interviews and
-              build sessions.
-            </p>
-            <div class="callout-actions">
-              <a class="button" href="assets/pdf/callout.pdf" data-pdf-trigger>Learn How</a>
-            </div>
-          </aside>
-          <!-- Creative Piece of Animation block (matches callout style) -->
-          <aside class="callout callout-centered" data-animate style="margin-top:1.5rem">
-            <h2 class="section-title">Creative Piece of Animation</h2>
-            <p>
-              Created by our head of animations @ <a href="https://www.youtube.com/@purple-blaze" target="_blank" rel="noopener noreferrer">Blaise Moody</a>
-            </p>
-              <div class="callout-actions" style="margin-top:1rem">
-              <div class="video-wrapper" style="width:100%;max-width:1127px;"> 
-                <iframe
-                      src="https://www.youtube.com/embed/ZfWOq-X9Z38"
-                  title="Creative piece placeholder"
-                  width="100%"
-                  height="360"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  style="border:0;border-radius:8px;overflow:hidden"
-                ></iframe>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrapper footer-inner">
-        <span>&copy; <span id="year">2024</span> The Cloud Network. Crafted in the dorm lab.</span>
-        <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="about.html">About Us</a>
-          <!-- <a href="storyline.html">Storyline</a> -->
-          <a href="apply.html">Apply</a>
-        </nav>
-      </div>
-    </footer>
-
-    <div class="pdf-overlay" data-pdf-overlay data-pdf-src="assets/pdf/callout.pdf" hidden>
-      <div class="pdf-modal" role="dialog" aria-modal="true" aria-labelledby="pdf-modal-title">
-        <div class="pdf-frame-wrapper">
-          <header class="pdf-modal-header">
-            <h2 id="pdf-modal-title">Callout Details</h2>
-            <button type="button" class="pdf-close" data-pdf-close aria-label="Close dialog">×</button>
-          </header>
-          <div class="pdf-poster">
-            <iframe
-              src=""
-              title="Callout information"
-              data-pdf-frame
-              loading="lazy"
-              aria-label="Embedded callout details PDF"
-            ></iframe>
+        <section class="section contact" id="contact">
+          <div class="section-header" data-animate>
+            <h2>Let's Collaborate</h2>
+            <p>Ready to build something exceptional together?</p>
           </div>
-        </div>
-      </div>
+          <div class="contact-content">
+            <form class="contact-form" data-animate>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane.doe@email.com"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <aside class="contact-details" data-animate>
+              <h3>Connect</h3>
+              <ul>
+                <li>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </li>
+                <li>
+                  <a href="https://github.com/username" target="_blank" rel="noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/username" target="_blank" rel="noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Your Name. Crafted with care.</p>
+      </footer>
     </div>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
